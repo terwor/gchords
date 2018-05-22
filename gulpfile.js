@@ -42,13 +42,13 @@ gulp.task('browserSync', function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        'app/libs/jqurey/dist/jquery.min.js',
-        'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+        'app/libs/jqurey/dist/jquery.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'));
 });
+
 
 gulp.task('css-libs', ['sass'] , function() {
     return gulp.src('app/css/libs.css')
