@@ -96,15 +96,15 @@ li {
   margin: 0 auto; }
 
 @media only screen and (max-width: 580px) {
-  #index_page_nav {
+  #main_header_nav {
     text-align: center; }
-  #index_page_nav_ul {
+  #main_header_nav_ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-    #index_page_nav_ul li {
+    #main_header_nav_ul li {
       margin-bottom: 10px; }
   h1 {
     font-size: 45px; }
