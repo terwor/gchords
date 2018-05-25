@@ -1,24 +1,60 @@
 @import "fonts"
 @import "base"
-@import "header"
+@import "vars"
 
-body
-    font-family: Arial, Helvetica, sans-serif
+.mainPage
+    grid-template-columns: 1fr 5fr
+    height: 100vh
+.sideBar
+    background-color: $sidebar_bg
+#logo
+    color: #fff
+    font-family: 'Satisfaction'
+    font-size: 45px
+    width: 100%
+    div
+        width: 100%
+        text-align: center
+        padding-top: 30px
+#mainNav
+    padding-top: 50px
+    font-family:  'Raleway'
+    ul
+        flex-direction: column
+        li
+            justify-content: center
+            padding: 10px
+            background-color: $menu_items
+            border-bottom: 0.1px solid $content_items_text
+            &:nth-child(1)
+                border-top: 0.1px solid $content_items_text
+            &:hover
+                background-color: $menu_items_hover
+            a
+                color: #fff
+.mainPageContent
+    grid-template-rows: auto
+    text-align: center
+h1
+    font-family: 'IndieFlower'
+    margin-bottom: 0
+span
+    margin: 0
+.lastPosts
+    grid-template-rows: auto
+.postHome
+    grid-template-columns: 30% 30% 30%
+    justify-content: space-around
+.homeItem
+    grid-template-rows: auto
+.homeItemImg
+    height: 250px
+    background-size: cover
+    background-position: center
 
-a
-    text-decoration: none
-    color: #2F4F4F
-li
-    list-style: none
+    
 
-.grid
-    display: grid
 
-.flex
-    display: flex
 
-.container
-    max-width: 1200px
-    margin: 0 auto
 
 @import "media"

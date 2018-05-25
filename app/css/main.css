@@ -14,70 +14,16 @@
   font-family: 'IndieFlower';
   src: url("../fonts/IndieFlower/IndieFlower.ttf"); }
 
-.wrap {
-  width: 100%;
-  height: 100vh; }
-
-#main_header {
-  font-family: 'Raleway';
-  font-size: 18px; }
-
-#logo {
-  font-family: 'Satisfaction';
-  font-weight: 600;
-  font-size: 70px;
-  text-align: center;
-  padding-top: 50px;
-  text-shadow: -3px -3px  10px gray; }
-  #logo a {
-    color: #000; }
-
-#main_header_nav {
-  padding-top: 30px; }
-
-#main_header_nav_ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0; }
-  #main_header_nav_ul li {
-    margin-left: 30px;
-    margin-right: 40px; }
-    #main_header_nav_ul li a {
-      border-bottom: 1px solid gray;
-      -webkit-transition: .25s;
-      -o-transition: .25s;
-      transition: .25s; }
-    #main_header_nav_ul li a:hover {
-      color: #000;
-      border-bottom: 1px solid #000; }
-
-#index_page_info {
-  text-align: center;
-  padding-top: 50px;
-  font-size: 30px; }
-  #index_page_info h1 {
-    font-family: 'IndieFlower'; }
-  #index_page_info h4 {
-    font-family: 'Montserrat';
-    font-weight: 200; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-family: Arial, Helvetica, sans-serif; }
 
 a {
-  text-decoration: none;
-  color: #2F4F4F; }
+  text-decoration: none; }
 
 li {
   list-style: none; }
@@ -86,27 +32,68 @@ li {
   display: grid; }
 
 .flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex; }
 
 .container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto; }
 
-@media only screen and (max-width: 580px) {
-  #main_header_nav {
-    text-align: center; }
-  #main_header_nav_ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    #main_header_nav_ul li {
-      margin-bottom: 10px; }
-  h1 {
-    font-size: 45px; }
-  h4 {
-    font-size: 25px; } }
+.mainPage {
+  grid-template-columns: 1fr 5fr;
+  height: 100vh; }
+
+.sideBar {
+  background-color: #242b2e; }
+
+#logo {
+  color: #fff;
+  font-family: 'Satisfaction';
+  font-size: 45px;
+  width: 100%; }
+  #logo div {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px; }
+
+#mainNav {
+  padding-top: 50px;
+  font-family: 'Raleway'; }
+  #mainNav ul {
+    flex-direction: column; }
+    #mainNav ul li {
+      justify-content: center;
+      padding: 10px;
+      background-color: #31393d;
+      border-bottom: 0.1px solid #9c9c9c; }
+      #mainNav ul li:nth-child(1) {
+        border-top: 0.1px solid #9c9c9c; }
+      #mainNav ul li:hover {
+        background-color: #22adac; }
+      #mainNav ul li a {
+        color: #fff; }
+
+.mainPageContent {
+  grid-template-rows: auto;
+  text-align: center; }
+
+h1 {
+  font-family: 'IndieFlower';
+  margin-bottom: 0; }
+
+span {
+  margin: 0; }
+
+.lastPosts {
+  grid-template-rows: auto; }
+
+.postHome {
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-around; }
+
+.homeItem {
+  grid-template-rows: auto; }
+
+.homeItemImg {
+  height: 250px;
+  background-size: cover;
+  background-position: center; }
