@@ -2,6 +2,7 @@
 @import "base"
 @import "vars"
 
+
 .mainPage
     grid-template-columns: 1fr 5fr
     height: 100vh
@@ -15,9 +16,9 @@
     div
         width: 100%
         text-align: center
-        padding-top: 30px
+        padding-top: 40px
 #mainNav
-    padding-top: 50px
+    padding-top: 30px
     font-family:  'Raleway'
     ul
         flex-direction: column
@@ -33,28 +34,36 @@
             a
                 color: #fff
 .mainPageContent
-    grid-template-rows: auto
+    grid-template-rows: 10%  8% 80%
     text-align: center
+    font-family: 'Montserrat'
+    
 h1
     font-family: 'IndieFlower'
     margin-bottom: 0
 span
     margin: 0
 .lastPosts
-    grid-template-rows: auto
+    grid-template-rows: 18% 70%
 .postHome
     grid-template-columns: 30% 30% 30%
     justify-content: space-around
 .homeItem
-    grid-template-rows: auto
+    h3
+        color: $content_items_header
+    &:hover
+        .homeItemImg
+            transform: scale(1.05) translateY(-6.5px)
+        .homeItemContent
+            color: $content_items_header
+
 .homeItemImg
     height: 250px
     background-size: cover
     background-position: center
-
-    
-
-
-
-
+    transition: transform .25s ease
+.homeItemContent, .homeItemDate
+    color: $content_items_text
+    transition: color .25s ease
+@import "contact"
 @import "media"

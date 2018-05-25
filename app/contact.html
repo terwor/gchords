@@ -11,37 +11,51 @@
 </head>
 
 <body>
-    <div class="wrap">
-        <header id="main_header" class="grid container">
-            <div id="logo">
-                <a href="index.html">GChords</a>
-            </div>
-            <nav id="main_header_nav">
-                <ul id="main_header_nav_ul">
-                    <li>
-                        <a href="#">блог</a>
+    <div class="mainPage container grid">
+        <section class="sideBar">
+            <a href="index.html" id="logo">
+                <div>GChords</div>
+            </a>
+            <nav id="mainNav">
+                <ul class="flex">
+                    <li class="mainNavItem flex">
+                        <a href="index.html">главная</a>
                     </li>
-                    <li>
-                        <a href="#">теория</a>
+                    <li class="mainNavItem flex">
+                        <a href="">практика</a>
                     </li>
-                    <li>
-                        <a href="#">практика</a>
+                    <li class="mainNavItem flex">
+                        <a href="">теория</a>
                     </li>
-                    <li>
+                    <li class="mainNavItem flex">
+                        <a href="">блог</a>
+                    </li>
+                    <li class="mainNavItem flex">
                         <a href="#">контакты</a>
                     </li>
                 </ul>
             </nav>
-        </header>
-        <div class="info_block">
+        </section>
+        <section class="mainPageContent grid">
+            <h1>guitarchords.ru</h1>
+            <p>Сайт о гитарах, аккордах, гаммах, ладах и многом другом.</p>
+            <!-- <p>Напишите нам:</p> -->
+            <div class="grid">
+            <form action="" class="flex">
+                <label for="username">Ваше имя:</label>
+                <input type="text" name="username" id="username">
+                <label for="email">Ваш email:</label>
+                <input type="email" name="email" id="email">
+                <label for="msg">Ваше сообщение:</label>
+                <textarea name="" id="msg" cols="30" rows="10"></textarea>
+                <input type="submit" value="Отпавить">
+            </form>
         </div>
-        <footer>
-            <p>&copy guitarchords
-                <span id="date"></span>
-            </p>
-        </footer>
-        <script src="js/libs.min.js"></script>
-        <script src="js/scripts.js"></script>
+        </section>
+    </div>
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
